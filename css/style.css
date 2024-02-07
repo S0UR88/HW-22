@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto&display=swap');
+
+/* COMMON CSS START */
+
+:root {
+    --primaryfont: "Josefin Sans", sans-serif;
+    --secondaryfont: "Roboto", sans-serif;
+    --text-color: #11161e;
+	--darkcolor: #151a32;
+	--comon-colot: #fff;
+	--primarycolor: #ff6f61;
+	--paragraph-color: #444;
+	--secondaryprimarycolor: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul , ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p,span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:var(--primaryfont);
+}
+
+/* COMMON CSS END */
+
+/* Navber start */
+
+#Desktopmenu ul li a{
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: var(--text-color);
+padding: 37px 21px 40px;
+display: block;
+
+}
+
+#Desktopmenu ul li:hover a{
+    color: var(--primarycolor);
+    transition: 0.3s;
+}
+
+#Desktopmenu ul li .submenu{
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#Desktopmenu ul li{
+    position: relative;
+}
+
+#Desktopmenu ul li .dropdownarrow i{
+    margin-left:5px;
+
+}
+
+#Desktopmenu ul li  i:hover{
+    transform:rotate(180deg);
+    transition: 0.2s;
+    
+}
+
+#Desktopmenu ul li .submenu li a{
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    color:var(--text-color);
+}
+
+#Desktopmenu ul li .submenu li a:hover{
+    color: var(--primarycolor);
+}
+
+
+#Desktopmenu ul li:hover .submenu{
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+
+}
+
+header nav .links li a{
+    color: var(--darkcolor);
+    font-size: 18px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+header nav .links li:hover a{
+    color: var(--primarycolor);
+    transition: 0.3s;
+}
+
+
+header nav .links li a span.cardcounter{
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: var(--primarycolor);
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--comon-colot);
+    position: absolute;
+    top: -5px;
+    right: -8px;
+}
+
+/* resonsive navber */
+
+.smallnav{
+    padding: 15px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.smallnav .menubuttontoggler{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+/* Navber end */
+
+/* offcanvas */
+
+.offcanvas-header input{
+    width: 80%;
+    height: 35px;
+    border: none;
+    border: 1px solid #444;
+    padding-left: 10px;
+    border-radius: 5px;
+    
+}
+
+header .smallmenu li a{
+    color: var(--text-color);
+    border-bottom: 1px solid #ccc;
+    display: block;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-left: 10px;
+
+}
+
+header .smallmenu li:last-child a{
+    border: none;
+}
+
+header .smallmenu li:hover > a{
+    color: var(--primarycolor);
+    transition: 0.3s;
+}
+
+header .smallmenu .submenu{
+    position: relative !important;
+    inset: auto !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    border-radius: 0;
+    
+}
+
+header .smallmenu .submenu li:hover > a{
+    color: var(--primarycolor);
+    transition: 0.3s;
+}
+
+
+/* offcanvas end */
